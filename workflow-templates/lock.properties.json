@@ -1,0 +1,4 @@
+{
+  "name": "Lock threads",
+  "description": "Lock closed issues and pull requests after a period of inactivity."
+}
