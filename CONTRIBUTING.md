@@ -94,12 +94,12 @@ you're not sure how to. Add the entry to the end of the relevant section, match
 the writing and formatting style of existing entries. Don't add an entry for
 changes that only affect documentation or project internals.
 
-Use the GitHub CLI to start a draft pull request. Specify the target branch with
-`-B`. The "stable" branch is the target for bug and documentation fixes,
-otherwise the target is "main".
+Use the GitHub CLI to start creating your pull request. Specify the target
+branch with `-B`. The "stable" branch is the target for bug and documentation
+fixes, otherwise the target is "main".
 
 ```
-$ gh pr create --web --draft --base stable
+$ gh pr create --web --base stable
 ```
 
 CI will run after you create the PR. If CI fails, you can click to see the logs
