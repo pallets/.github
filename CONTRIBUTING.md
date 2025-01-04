@@ -1,8 +1,10 @@
 # Contributing Quick Reference
 
-This document assumes you have some familiarity with Git, GitHub, and Python
-virutalenvs. We are working on a more thorough guide about the different ways to
-contribute with in depth explanations, which will be available soon.
+This is a quick reference for how to set up the development environment and
+contribute with a PR. It assumes you're familiar with contributing to projects,
+and with Git, GitHub, and Python virtualenvs. Our full contributing guide, which
+goes into much more detail about individual topics, is available here:
+<https://palletsprojects.com/contributing>.
 
 These instructions will work with at least Bash and PowerShell, and should work
 on other shells. On Windows, use PowerShell, not CMD.
@@ -64,26 +66,27 @@ get the current dev dependencies.
 
 These are the essential test commands you can run while developing:
 
-* `pytest` - Run the unit tests.
-* `mypy` - Run the main type checker.
-* `tox run -e docs` - Build the documentation.
+-   `pytest` - Run the unit tests.
+-   `mypy` - Run the main type checker.
+-   `tox run -e docs` - Build the documentation.
 
 These are some more specific commands if you need them:
 
-* `tox parallel` - Run all test environments that will be run in CI, in
-  parallel. Python versions that are not installed are skipped.
-* `pre-commit` - Run the linter and formatter tools. Only runs against changed
-  files that have been staged with `git add -u`. This will run automatically
-  before each commit.
-* `pre-commit run --all-files` - Run the pre-commit hooks against all files,
-  including unchanged and unstaged.
-* `tox run -e py3.11` - Run unit tests with a specific Python version. The
-  version must be installed. `-e pypy` will run against PyPy.
-* `pyright` - A second type checker.
-* `tox run -e typing` - Run all typing checks. This includes `pyright` and its
-  export check as well.
-* `python -m http.server -b 127.0.0.1 -d docs/_build/html` - Serve the
-  documentation.
+-   `tox parallel` - Run all test environments that will be run in CI, in
+    parallel. Python versions that are not installed are skipped.
+-   `pre-commit` - Run the linter and formatter tools. Only runs against changed
+    files that have been staged with `git add -u`. This will run automatically
+    before each commit.
+-   `pre-commit run --all-files` - Run the pre-commit hooks against all files,
+    including unchanged and unstaged.
+-   `tox run -e py3.11` - Run unit tests with a specific Python version. The
+    version must be installed. `-e pypy` will run against PyPy.
+-   `pyright` - A second type checker.
+-   `tox run -e typing` - Run all typing checks. This includes `pyright` and its
+    export check as well.
+-   `python -m http.server -b 127.0.0.1 -d docs/_build/html` - Serve the
+    documentation.
+-   `tox run` and `tox parallel` can be shortened to `tox r` and `tox p`.
 
 ## Create a Pull Request
 
