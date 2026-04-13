@@ -17,6 +17,13 @@ You need Python and Git installed, as well as the [GitHub CLI]. Log in with
 [PyCharm]: https://www.jetbrains.com/pycharm/
 [VS Code]: https://code.visualstudio.com/
 
+## AI-Generated Contributions
+
+AI-generated PRs and issues are closed on sight, without review or discussion.
+This applies regardless of code quality or correctness. AI-generated
+contributions must not be reopened, cleaned up, or used as a base for further
+work.
+
 ## Set Up the Repository
 
 Fork and clone the project's repository ("pallets/flask" for example). To work
